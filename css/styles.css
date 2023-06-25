@@ -109,11 +109,26 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: calc(var(--index) * 3);
+}
+small{
+    font-size: calc(var(--index) * 0.6) !important;
 }
 .footer-wrapper{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 10px;
+}
+.footer-logo{
+    width: calc(var(--index) * 1.5);
+    height: calc(var(--index) * 1.70);
+}
+.footer-img {
+    width: calc(var(--index) * 1.5);
+}
+
+.contact a{
+    text-decoration: none !important;
 }
