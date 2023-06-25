@@ -12,23 +12,17 @@ body{
 
 /* ! main */
 main{
-    /*background: linear-gradient(rgb(255, 255, 255),rgb(238, 214, 169),rgb(238, 169, 169), rgb(122, 122, 215));
-    */
-    /*background: url("../imgs/Screenshot_1.png");*/
     background-color: #212529;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /*font-family: 'Acme', sans-serif;*/
-    
 }
 
 /* * bildborad */
 .bildborad{
     height: 50vh;
     position: relative;
-    box-shadow: 0 20px 40px #1e1e1e;
-    
+    box-shadow: 0 20px 40px #191919;
+}
+.navbar-brand{
+    color: wheat !important;
 }
 .slogan{
     position: absolute;
@@ -51,25 +45,27 @@ main{
 .main-content{
     display: flex;
     height: 100vh;
+    padding-bottom: 50px;
 }
 .cards{
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     gap: 20px;
     justify-content: center;
-    color: white;
+    color: wheat;
 }
 .cards > div {
     box-shadow: 0 0 50px 0 rgb(0, 0, 0, 0.5); 
     border-radius: 5px;
     font-size: calc(var(--index)*0.6);
-    
+    position: relative;
+
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: calc(var(--index) * 3);
-    transition: all 0.4s;
+    transition: all 0.4s ease-in-out;
 }
 .flavors{
     grid-area: 1 / 1 / 3 / 1;
@@ -86,7 +82,38 @@ h4{
 }
 
 .cards > div:hover{
-    background-color: rgb(255, 255, 255, 0.5);
-    color: #262626;
+    color: #000000;
+}
+.cards > div::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(rgb(255, 255, 255),rgb(238, 214, 169),rgb(238, 169, 169), rgb(122, 122, 215));
+    opacity: 0;
+    transition: all 2s;
+}
+.cards > div:hover::before{
+    opacity: 1;
+    z-index: -1;
 }
 
+
+/* ! footer */
+footer{
+    color:wheat;
+    background-color: #1b1e20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
