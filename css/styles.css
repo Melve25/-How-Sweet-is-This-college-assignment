@@ -10,9 +10,11 @@ body{
     --index: calc(1vw + 1vh);
 }
 
+
 /* ! main */
 main{
     background-color: #212529;
+    overflow: hidden;
 }
 
 /* * bildborad */
@@ -20,6 +22,7 @@ main{
     height: 50vh;
     position: relative;
     box-shadow: 0 20px 40px #191919;
+    z-index: 1;
 }
 .navbar-brand{
     color: wheat !important;
@@ -46,6 +49,7 @@ main{
     display: flex;
     height: 100vh;
     padding-bottom: 50px;
+    position: relative;
 }
 .cards{
     display: grid;
@@ -53,6 +57,7 @@ main{
     gap: 20px;
     justify-content: center;
     color: wheat;
+    z-index: 1;
 }
 .cards > div {
     box-shadow: 0 0 50px 0 rgb(0, 0, 0, 0.5); 
@@ -76,6 +81,26 @@ main{
 .main-info{
     grid-area: 3 / 1 / 5 / 4;
 }
+
+.backgroundImg1{
+    position: absolute;
+    width: calc(var(--index) * 1.5 * 20);
+    height: calc(var(--index) * 1.70 * 20);
+    top: calc(var(--index) * 14);
+    left: calc(var(--index) * 0);
+    rotate: 30deg;
+    transform: scale(1.3);
+}
+.backgroundImg2{
+    position: absolute;
+    width: calc(var(--index) * 1.5 * 10);
+    height: calc(var(--index) * 1.70 * 10);
+    top: calc(var(--index) * -5);
+    left: calc(var(--index) * 40);
+    rotate: 130deg;
+    transform: scale(1.3);
+}
+
 
 h4{
     font-size: calc(var(--index)* 1) !important;
