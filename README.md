@@ -23,11 +23,14 @@ No doubt dark theme, and for background(bg) some cubic candy images, they are pi
 Candy (colors taken  form 'spline')
  - 'FE7ABA'
  - 'FFB57C'
+   
 Backgound of candy
  - '1414FF'
  - 'FFA514'
+   
 Website backgound(colors taken from VS)
  - '#212529'
+   
 Linear-gradient
  - 'rgb(255, 255, 255)'
  - 'rgb(238, 214, 169)'
