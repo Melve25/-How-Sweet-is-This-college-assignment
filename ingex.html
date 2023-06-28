@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cubic candy</title>
+    <!--* css -->
     <link rel="stylesheet" href="css/styles.css">
+    <!--* bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--* google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <!--* favicon -->
+    <link rel="icon" href="/imgs/logo.png" type="image/png">
 </head>
 <body>
     <!--* header -->
     <header>
-
+        <!--* bootstrap navbar -->
         <nav class="navbar navbar-dark bg-dark container-fluid">
             <div class="container-lg">
               <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="imgs/logo.png" alt="Logo" width="40" height="45" class="d-inline-block align-text-top me-2">
+                <img src="imgs/logo.png" alt="Logo" width="40" height="45" class="d-inline-block align-text-top me-2 main-link">
                 CC
               </a>
             </div>
@@ -27,6 +33,7 @@
 
     <!--* body -->
     <main>
+      <!--* 3d element from spline and some text -->
       <div class="bildborad">
         <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.369/build/spline-viewer.js"></script>
         <spline-viewer url="https://prod.spline.design/P7CjgUFMwlAzzfUK/scene.splinecode"></spline-viewer>
@@ -36,6 +43,7 @@
         </div>
       </div>
 
+      <!--* main content with cards -->
       <div class="main-content container-lg mt-5">
 
         <!-- cards -->
@@ -49,29 +57,31 @@
           </div>
 
           <div class="nutrition">
-            <h4>Some Texty</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus veritatis earum rerum. Earum reiciendis ipsam dignissimos, quaerat iusto eius eligendi eos, perferendis minima amet debitis facere harum beatae atque quae!</p> 
+            <h4>Nutrition</h4>
+            <p>At Cubic Candy, we value transparency and your well-being. We are committed to providing you with comprehensive nutritional information about our candies. We understand that everyone has different dietary requirements and preferences, which is why we offer a diverse selection of candies with varying nutritional profiles. Whether you're looking for gluten-free, sugar-free, or vegan options, we strive to make it easier for you to find</p> 
           </div>
 
           <div class="main-info">
-            <h4>Some Texty</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus veritatis earum rerum. Earum reiciendis ipsam dignissimos, quaerat iusto eius eligendi eos, perferendis minima amet debitis facere harum beatae atque quae!</p> 
+            <h4>Quality standard</h4>
+            <p>At Cubic Candy, we take pride in providing you with the highest quality candies. We believe that great taste starts with exceptional ingredients. That's why we carefully select our candies, ensuring they meet our rigorous standards for taste, freshness, and quality. From artisanal confections to popular favorites, every candy in our collection is thoughtfully chosen to bring you an unforgettable experience.</p> 
           </div>
         </div>
+        <!--* bg images -->
         <img src="imgs/logo.png" alt="" class="backgroundImg1">
         <img src="imgs/logo.png" alt="" class="backgroundImg2">
-
+        <img src="imgs/logo.png" alt="" class="backgroundImg3">
       </div>
     </main>
     
     <!--* footer -->
     <footer >
       <div class="container-lg footer-wrapper">
+        <!--* copytight and img -->
         <div class="copyright">
           <img src="imgs/logo.png" alt="Logo" width="30" height="35" class="footer-logo">
           <small>&copy;Developed by Melve</small>
         </div>
-
+        <!--* contact links -->
         <div class="contact">
           <a href="#">
             <img src="imgs/Instagram_logo.svg" alt="instagramm" width="40" class="footer-img">
@@ -82,7 +92,6 @@
           <a href="#">
             <img src="imgs/Telegram_logo.svg" alt="telegram" width="40" class="footer-img">
           </a>
-
         </div>
       </div> 
     </footer>
