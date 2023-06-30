@@ -1,4 +1,4 @@
-# Introdaction
+# Introduction
 > 3D
 
 That was an interesting experience of using 3D objects in an HTML page. I found out later that it would have been better to use "Three.js" instead of "spline". Anyway, I need some knowledge for that. "Spline" just helped me with 3D modeling without any coding.
